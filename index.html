@@ -2,11 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Eindopdracht UX</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Sint-Vincentiusschool</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
+
+    <header>
+        <div class="logo">Sint-Vincentiusschool Melle - Gontrode</div>
+        <nav>
+                <ul>
+                    <li class="sub-menu"><a href="#">Algemeen</a>
+                        <ul>
+                            <li><a href="#">Info</a></li>
+                            <li><a href="#">Kalender</a></li>
+                            <li><a href="#">Wie is wie</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu"><a href="#">Veilig naar school</a>
+                        <ul>
+                            <li><a href="#">Sam de verkeerslang</a></li>
+                            <li><a href="#">Schoolstraat</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Schoolraad</a></li>
+                    <li><a href="#">Fotoalbum</a></li>
+                    <li><a href="#">Klassen</a></li>
+                    <li class="sub-menu"><a href="#">Oudercomité</a>
+                        <ul>
+                            <li><a href="#">Oudercomité Melle</a></li>
+                            <li><a href="#">Oudercomité Gontrode</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="sub-menu"><a href="#">Zorg</a>
+                        <ul>
+                            <li><a href="#">Zorgvisie</a></li>
+                            <li><a href="#">Zorgteam</a></li>
+                            <li><a href="#">Zorgcontiuüm</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('nav').toggleClass('active')
+            })
+            $('ul li').click(function(){
+                $(this).siblings().removeClass('active');
+                $(this).toggleClass('active');
+            })
+        })
+    </script>
+
+    <main>
+        <div class="container">
+            <div class="overlay">
+                <p class="main">Wij wensen je een fijne vakantie toe!</p>
+                <img class="main-img-1" src="./Afbeeldingen/ethan-robertson-SYx3UCHZJlo-unsplash.jpg" alt="Fijne vakantie">
+                <h1 class="main-title">Zeeklassen Bredene dag 1</h1>
+                <p class="text">Onze eerste en tweede klassers zijn goed aangekomen in Bredene en genieten alvast van de zon, zee en het strand. <br> Hier vinden jullie alvast een paar foto's.</p>
+                <img class="main-img-2" src="./Afbeeldingen/backlit-beach-children-939700.jpg" alt="Zee">
+                <img class="main-img-2" src="./Afbeeldingen/beach-boys-children-1231365.jpg" alt="Spetteren">
+            </div>
+        </div>
+
+        <div class="container-2">
+            <div class="overlay">
+                <h1 class="main-title">Zeeklassen Bredene dag 2</h1>
+                <p class="text">De tweede dag sloten we af door een vuurzak aan te steken. <br> Deze vuurzakken werden zelf gemaakt tijdens de knutseluurtjes, ze werden ook gepersonaliseerd door de kinderen.</p>
+                <img class="main-img-2" src="./Afbeeldingen/atmosphere-backlit-beach-417082.jpg" alt="Zonsondergang">
+                <img class="main-img-2" src="./Afbeeldingen/adults-backlit-beach-950037.jpg" alt="Vuurzak">
+            </div>
+        </div>
+
+        <div class="container-3">
+            <div class="overlay">
+                <h1 class="main-title">Zeeklassen Bredene dag 3</h1>
+                <p class="text">De derde dag zijn we niet naar het strand gegaan maar naar het bos. <br> Daar hebben een spelletje gespeeld met een kompas en hebben we tevens ook gekampeerd en samen rond het vuurtje liedjes gezonden.</p>
+                <img class="main-img-2" src="./Afbeeldingen/activity-adult-adventure-1308751.jpg" alt="Kompass">
+                <img class="main-img-3" src="./Afbeeldingen/ash-burn-calamity-1059042.jpg" alt="Vuurkamp">
+                <img class="main-img-2" src="./Afbeeldingen/adventure-camp-camping-699558.jpg" alt="Camping">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p class="footer-text">
+                Wezenstraat 8, Melle 9090
+                Tel. 09 252 27 87
+                svsmelle@telenet.be
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
